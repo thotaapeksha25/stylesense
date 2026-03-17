@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI StyleSense</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>👗 AI StyleSense</h1>
+
+<form method="POST">
+    <label>Gender:</label>
+    <select name="gender">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <label>Occasion:</label>
+    <select name="occasion">
+        <option>Casual</option>
+        <option>Formal</option>
+        <option>Party</option>
+    </select>
+
+    <label>Favorite Color:</label>
+    <input type="text" name="color" required>
+
+    <button type="submit">Get Outfit</button>
+</form>
+
+<h2>{{ outfit }}</h2>
+
+</body>
+</html>
